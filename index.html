@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Store</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Enter Store Overlay -->
+    <div id="enterContainer">
+      <button id="enterButton">Enter the Store</button>
+    </div>
+    <button id="deleteBtn"> Delete Product 3 </button>
+    <!-- Side Panel (Initially Collapsed) -->
+    <div id="sidePanel" class="collapsed">
+      <div id="panelHeader">
+        <span id="closePanel">&times;</span> <!-- Cross Button -->
+      </div>
+      <div id="panelContent">
+        <button id="addProduct">➕ Add Product</button>
+        <button id="deleteProduct">🗑️ Delete Product</button>
+      </div>
+    </div>
+    <!-- Three.js Canvas -->
+    <canvas class="threejs"></canvas>
+
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/script.js"></script>
+  </body>
+</html>
